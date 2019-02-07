@@ -1,0 +1,16 @@
+<h1>All Flats</h1>
+<div>
+  <ul class="list-inline">
+    <!-- not to have visible :) -->
+    <% @flats.each do |flat| %>
+      <li>
+        <!-- links to the flats -->
+        <%= link_to flat["name"], flat_path(flat["id"]) %>
+        - <%=  flat["price"] %> <%= flat["priceCurrency"] %>
+      </li>
+    <% end %>
+  </ul>
+</div>
+
+<!-- every variable separately in erb syntax -->
+<!-- find by id of defined path in routes -> particular flat and redirect to show -->

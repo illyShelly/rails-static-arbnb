@@ -1,0 +1,10 @@
+<h1>Detail of the flat</h1>
+<!-- <p>Find me in app/views/flats/show.html.erb</p> -->
+<h4><%= @flat["name"] %> </h4>
+<p>Price: <%= @flat["price"] %> <%= @flat["priceCurrency"] %></p>
+
+<!-- display image -->
+<div class="img-container">
+  <%= image_tag  @flat["imageUrl"], alt: @flat['name'], class: "img" %>
+</div>
+<%= link_to "All flats", root_path %>

@@ -1,0 +1,24 @@
+// Place all the styles related to the flats controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.img {
+  width: 70%;
+  height: 70%;
+}
+
+ul li {
+  padding: 8px;
+  opacity: 0.9;
+  transition: .5s;
+  // transition: all .9s ease;
+}
+ul li:hover {
+  padding-left: 10px;
+  opacity: 0.8;
+}
+
